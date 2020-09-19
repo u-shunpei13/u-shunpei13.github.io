@@ -1,0 +1,133 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+li{
+  font-size:18px;
+  float:left;
+  padding:33px 20px;
+ }
+ 
+.header {
+  height:90px;
+  color:white;
+  background-color:#26d0c9;
+  }
+
+.header-logo {
+  font-size:18px;
+  float:left;
+  padding:20px 40px;
+}
+
+.main {
+  padding:100px 80px;
+}
+
+.copy-container h1{
+  font-size:140px;
+ 
+}
+
+.copy-container h2{
+  font-size:60px;
+  
+}
+
+.copy-container span{
+    color:#ff4a4a;
+}
+
+.contents {
+  height:500px;
+  margin-top:10px;
+  padding-left:80px;
+}
+
+.contents h3{
+  border-bottom:1px solid #333;
+  font-size:28px;
+  padding-bottom:23px;
+  margin-bottom:50px;
+  margin-right:70px;
+}
+
+.contents-item {
+  float:left;
+  height:500px;
+  margin-right:40px;
+}
+
+.contents-item p {
+  font-size:25px;
+  padding-top:30px;
+}
+
+.contents-form{
+  height:600px;
+  float:left;
+  font-size:24px;
+  padding-left:80px;
+  width:1120px;
+}
+
+.contents-form h3{
+  border-bottom:1px solid #333;
+  margin-bottom:50px;
+}
+
+input, textarea {
+  width:400px;
+  margin-top:10px;
+  margin-bottom:35px;
+  padding:20px;
+  border: 1px solid #dee7ec;
+  font-size:18px;
+  }
+  
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+  
+.contents-form p{
+  font-size:18px;
+}
+
+.footer {
+  width:1300px;
+  height:120px;
+  color:white;
+  float:left;
+  background-color:#2f5167;
+  padding:40px;
+}
+
+.footer-logo{
+  font-size:32px;
+  float:left;
+}
+
+.footer-list {
+  float:right;
+    display:list-item;
+}
+
+.footer-list li{
+  padding:20px;
+
+}
+
