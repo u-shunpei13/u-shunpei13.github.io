@@ -1,133 +1,199 @@
 html, body,
 ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
+h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
 }
 
 li {
   list-style: none;
 }
 
-/* ここからCSSを記述してください */
-li{
-  font-size:18px;
-  float:left;
-  padding:33px 20px;
- }
- 
-.header {
-  height:90px;
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+header {
+  height:65px;
+  width:100%;
   color:white;
-  background-color:#26d0c9;
-  }
-
-.header-logo {
-  font-size:18px;
-  float:left;
-  padding:20px 40px;
+  background-color:rgba(34, 49, 52, 0.9);;
+  position:fixed;
+  top:0;
+  z-index: 10;
 }
 
-.main {
-  padding:100px 80px;
-}
-
-.copy-container h1{
-  font-size:140px;
- 
-}
-
-.copy-container h2{
-  font-size:60px;
-  
-}
-
-.copy-container span{
-    color:#ff4a4a;
-}
-
-.contents {
-  height:500px;
-  margin-top:10px;
-  padding-left:80px;
-}
-
-.contents h3{
-  border-bottom:1px solid #333;
-  font-size:28px;
-  padding-bottom:23px;
-  margin-bottom:50px;
-  margin-right:70px;
-}
-
-.contents-item {
-  float:left;
-  height:500px;
-  margin-right:40px;
-}
-
-.contents-item p {
-  font-size:25px;
-  padding-top:30px;
-}
-
-.contents-form{
-  height:600px;
-  float:left;
-  font-size:24px;
-  padding-left:80px;
-  width:1120px;
-}
-
-.contents-form h3{
-  border-bottom:1px solid #333;
-  margin-bottom:50px;
-}
-
-input, textarea {
-  width:400px;
-  margin-top:10px;
-  margin-bottom:35px;
-  padding:20px;
-  border: 1px solid #dee7ec;
-  font-size:18px;
-  }
-  
-.contact-submit{
-  background-color:#dee7ec;
-  color:#889eab;
-}
-  
-.contents-form p{
-  font-size:18px;
-}
-
-.footer {
-  width:1300px;
-  height:120px;
-  color:white;
-  float:left;
-  background-color:#2f5167;
-  padding:40px;
-}
-
-.footer-logo{
-  font-size:32px;
+.header-left {
   float:left;
 }
 
-.footer-list {
+.header-right {
   float:right;
-    display:list-item;
+  background-color:rgba(255, 255, 255, 0.3);
 }
 
-.footer-list li{
-  padding:20px;
-
+.header-right a:hover {
+  background-color:rgba(255, 255, 255, 0.3);
 }
 
+.logo {
+  width:140px;
+  margin-top:20px;
+}
+
+.login {
+  line-height:65px;
+  color:white;
+  padding:0 25px;
+  display:block;
+  transition:all 1s;
+}
+
+.container {
+  width:1170px;
+  margin:0 auto;
+ 
+}
+
+.container h1 {
+  font-size:50px;
+   opacity:0.7;
+}
+
+.top-wrapper p {
+  margin-bottom:15px;
+   opacity:0.7;
+}
+
+.top-wrapper {
+  padding:180px 0 100px 0;
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size:cover;
+  color:white;
+  text-align:center;
+  
+}
+
+.btn-wrapper a{
+  padding:8px 25px;
+  
+  color:white;
+  display:inline-block;
+  border-radius:4px;
+  opacity:0.8;
+}
+
+.btn-wrapper a:hover {
+  opacity:1;
+}
+
+.btn-wrapper p {
+  margin-bottom:20px;
+}
+
+.signup {
+  margin-bottom:15px;
+  background-color:#239b76;
+}
+
+.twitter {
+  background-color:#55acee;
+}
+
+.facebook {
+  margin-right:10px;
+  background-color:#3b5998;
+}
+
+.heading {
+  
+  padding:80px 0 50px 0;
+}
+
+.heading h2 {
+  color:#5f5d60;
+  font-weight:normal;
+}
+
+.lesson-wrapper {
+  height:580px;
+  text-align:center;
+  background-color:#f7f7f7;
+}
+
+.lesson-icon {
+  position:relative;
+}
+
+.lesson-icon p {
+  width:100%;
+  position:absolute;
+  top:90px;
+  color:white;
+  
+}
+
+.lesson {
+  float:left;
+  width:25%;
+}
+
+.lesson-icon p {
+  opacity:1;
+}
+
+.text-contents {
+  color:#b3aeb5;
+  display:inline-block;
+  width:80%;
+  margin-top:15px;
+  font-size:13px;
+}
+
+.message-wrapper {
+  padding-bottom:80px;
+  text-align:center;
+}
+
+.heading h3 {
+  font-weight:normal;
+}
+
+.message {
+    color: white;
+    background-color:#5dca88;
+    padding:15px 40px;
+    display: inline-block;
+    border-radius: 4px;
+    opacity: 0.8;
+    box-shadow:0 7px #1a7940;
+}
+
+.message:hover {
+  opacity:1;
+}
+
+.message:active {
+  position:relative;
+  top:6px;
+  box-shadow:none;
+}
+
+footer {
+  padding:30px 0;
+  border-top:1px solid #eee;
+}
+
+footer img {
+  width:124px;
+}
+
+footer p {
+  color:#b3aeb5;
+  font-size:12px;
+}
